@@ -1,0 +1,18 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [24/May/2022 16:08:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2022 16:08:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открыта страница загрузки нового поста
+INFO:werkzeug:127.0.0.1 - - [24/May/2022 16:08:11] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2022 16:08:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Отсутствует часть данных
+INFO:werkzeug:127.0.0.1 - - [24/May/2022 16:08:14] "POST /post HTTP/1.1" 200 -
+INFO:root:Открыта страница загрузки нового поста
+INFO:werkzeug:127.0.0.1 - - [24/May/2022 16:08:16] "GET /post HTTP/1.1" 200 -
+INFO:root:Отсутствует часть данных
+INFO:werkzeug:127.0.0.1 - - [24/May/2022 16:08:21] "POST /post HTTP/1.1" 200 -
+INFO:root:Открыта страница загрузки нового поста
+INFO:werkzeug:127.0.0.1 - - [24/May/2022 16:08:22] "GET /post HTTP/1.1" 200 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [24/May/2022 16:08:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2022 16:08:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
