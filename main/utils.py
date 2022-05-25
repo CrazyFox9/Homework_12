@@ -1,11 +1,18 @@
 import json
+from exceptions import *
+import logging
+
+logging.basicConfig(filename='logger.log', level=logging.INFO)
 
 
 def load_json_data(path):
     """ Загружает список постов из JSON файла """
-
-    with open(path, "r", encoding="utf-8") as file:
-        return json.load(file)
+    try:
+        with open(path, "r", encoding="utf-8") as file:
+            return json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        logging.info("Проблема с открытием файла с постами")
+        raise DataJsonError
 
 
 def search_posts(posts, text):

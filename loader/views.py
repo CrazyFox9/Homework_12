@@ -1,5 +1,4 @@
 from flask import Blueprint, render_template, request
-import logging
 from main.utils import *
 from loader.utils import *
 from config import POST_PATH
@@ -30,7 +29,10 @@ def created_new_post_by_user():
 
     posts = load_json_data(POST_PATH)
 
-    new_post = {"pic": save_picture(picture), "content": content}
+    try:
+        new_post = {"pic": save_picture(picture), "content": content}
+    except WrongImageType:
+        return "Неверный формат картинки!"
 
     add_post(posts, new_post)
 
